@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">kg_lab1</string>
+
+    <string name="default_color_value">0</string>
+
+    <string name="name_RGB">RGB</string>
+    <string name="name_HLS">HLS</string>
+    <string name="name_Luv">L*u*v*</string>
+    <string name="name_CMY">CMY</string>
+
+    <string name="component_R_rgb">R:</string>
+    <string name="component_G_rgb">G:</string>
+    <string name="component_B_rgb">B:</string>
+
+    <string name="component_H_hls">H:</string>
+    <string name="component_L_hls">L:</string>
+    <string name="component_S_hls">S:</string>
+
+    <string name="component_L_luv">L*:</string>
+    <string name="component_u_luv">u*:</string>
+    <string name="component_v_luv">v*:</string>
+
+    <string name="component_C_cmy">C:</string>
+    <string name="component_M_cmy">M:</string>
+    <string name="component_Y_cmy">Y:</string>
+
+</resources>

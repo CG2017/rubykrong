@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context="by.famcs.minchuk.kg_lab1.MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <SeekBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sbFirstValue"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.8"
+                android:max="255"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/component_R_rgb"
+                android:id="@+id/tvMainFirstLabel"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.05"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/default_color_value"
+                android:id="@+id/tvMainFirstValue"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.15"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <SeekBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sbSecondValue"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.8"
+                android:max="255"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/component_G_rgb"
+                android:id="@+id/tvMainSecondLabel"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.05"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/default_color_value"
+                android:id="@+id/tvMainSecondValue"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.15"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <SeekBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sbThirdValue"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.8"
+                android:max="255"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/component_B_rgb"
+                android:id="@+id/tvMainThirdLabel"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.05"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/default_color_value"
+                android:id="@+id/tvMainThirdValue"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.15"
+                />
+        </TableRow>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_weight="0.25"
+                    android:orientation="horizontal"
+                    android:id="@+id/rgPalette">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name_RGB"
+                        android:id="@+id/rbRGB"
+                        android:layout_weight="0.25"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name_HLS"
+                        android:id="@+id/rbHLS"
+                        android:layout_weight="0.25"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name_Luv"
+                        android:id="@+id/rbLuv"
+                        android:layout_weight="0.25"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name_CMY"
+                        android:id="@+id/rbCMY"
+                        android:layout_weight="0.25"/>
+                </RadioGroup>
+
+            </TableRow>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/name_RGB"
+                    android:id="@+id/textView7"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/component_R_rgb"
+                    android:id="@+id/textView8"
+                    android:layout_weight="0.03"/>
+
+                <by.famcs.minchuk.kg_lab1.EditTextColor
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etR_rgb"
+                    android:layout_weight="0.215"
+                    android:inputType="number"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/component_G_rgb"
+                    android:id="@+id/textView9"
+                    android:layout_weight="0.03"/>
+
+                <by.famcs.minchuk.kg_lab1.EditTextColor
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etG_rgb"
+                    android:layout_weight="0.215"
+                    android:inputType="number"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/component_B_rgb"
+                    android:id="@+id/textView10"
+                    android:layout_weight="0.03"/>
+
+                <by.famcs.minchuk.kg_lab1.EditTextColor
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etB_rgb"
+                    android:layout_weight="0.215"
+                    android:inputType="number"
+                    android:textAlignment="center" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/name_HLS"
+                    android:id="@+id/textView11"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/component_H_hls"
+                    android:id="@+id/textView12"
+                    android:layout_weight="0.03" />
+
+                <by.famcs.minchuk.kg_lab1.EditTextColor
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etH_hls"
+                    android:layout_weight="0.215"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/component_L_hls"
+                    android:id="@+id/textView13"
+                    android:layout_weight="0.03" />
+
+                <by.famcs.minchuk.kg_lab1.EditTextColor
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etL_hls"
+                    android:layout_weight="0.215"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/component_S_hls"
+                    android:id="@+id/textView14"
+                    android:layout_weight="0.03" />
+
+                <by.famcs.minchuk.kg_lab1.EditTextColor
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etS_hls"
+                    android:layout_weight="0.215"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/name_Luv"
+                    android:id="@+id/textView15"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/component_L_luv"
+                    android:id="@+id/textView16"
+                    android:layout_weight="0.03" />
+
+                <by.famcs.minchuk.kg_lab1.EditTextColor
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etL_luv"
+                    android:layout_weight="0.215"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/component_u_luv"
+                    android:id="@+id/textView17"
+                    android:layout_weight="0.03" />
+
+                <by.famcs.minchuk.kg_lab1.EditTextColor
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etU_luv"
+                    android:layout_weight="0.215"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/component_v_luv"
+                    android:id="@+id/textView18"
+                    android:layout_weight="0.03" />
+
+                <by.famcs.minchuk.kg_lab1.EditTextColor
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etV_luv"
+                    android:layout_weight="0.215"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:textAlignment="center" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/name_CMY"
+                    android:id="@+id/textView19"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/component_C_cmy"
+                    android:id="@+id/textView20"
+                    android:layout_weight="0.03" />
+
+                <by.famcs.minchuk.kg_lab1.EditTextColor
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etC_cmy"
+                    android:layout_weight="0.215"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/component_M_cmy"
+                    android:id="@+id/textView21"
+                    android:layout_weight="0.03" />
+
+                <by.famcs.minchuk.kg_lab1.EditTextColor
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etM_cmy"
+                    android:layout_weight="0.215"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/component_Y_cmy"
+                    android:id="@+id/textView22"
+                    android:layout_weight="0.03" />
+
+                <by.famcs.minchuk.kg_lab1.EditTextColor
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etY_cmy"
+                    android:layout_weight="0.215"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center" />
+            </TableRow>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ibColorArea"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+    </TableLayout>
+
+</RelativeLayout>
